@@ -1,0 +1,103 @@
+body {
+	background-color: #34495E;
+	font-family: 'Droid Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.rainbow {
+	width: 100%;
+	height: 16px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: width 1s;
+}
+.rainbow li{
+	width: 20%;
+	height: 16px;
+	float: left;
+	-webkit-animation: w20 1s ease forwards;
+}
+.green {
+	background-color: #1abc9c;
+}
+.orange {
+	background-color: #e67e22;
+}
+.purple {
+	background-color: #9b59b6;
+}
+.yellow {
+	background-color: #f1c40f;
+}
+.red {
+	background-color: #e74c3c;
+}
+
+.container {
+	text-align: center;
+	padding-top: 3em;
+	color: #fff;
+}
+
+.profile-img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 20px #ecf0f1;
+	margin: 25px auto;
+}
+
+#name {
+	font-size: 3.75em;
+	margin-bottom: 0.3em;
+}
+
+#title {
+	margin-top: 0;
+	font-size: 1.7em;
+	font-style: italic;
+}
+
+#bio {
+	max-width: 600px;
+	font-size: 1.2em;
+	margin: 0 auto;
+	line-height: 1.8em;
+	letter-spacing: 1px;
+	padding-top: 0.7em;
+	margin-bottom: 3em;
+}
+
+.color-button {
+	padding: 20px;
+	vertical-align: middle;
+	color: #ecf0f1;
+	outline: 6px solid #1abc9c;
+	font-size: 1.5em;
+	text-decoration: none;
+	transition: box-shadow 0.5s;
+}
+
+.color-button:hover {
+	box-shadow: 0 0 0 6px #e67e22, 0 0 0 12px #9b59b6, 0 0 0 18px #f1c40f, 0 0 0 24px #e74c3c;
+}
+
+footer {
+	margin-top: 3em;
+}
+
+i {
+	font-size: 3em;
+	color: white;
+}
+.fa {
+	font-size: 3em;
+  margin: 0.5em;
+}
+
+@-webkit-keyframes w20 {
+    from { width: 0%; }
+    to { width: 20%; }
+}
