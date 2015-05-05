@@ -26,5 +26,20 @@
 			<a href="mailto:rasharasem@gmail.com"><i class="fa fa-envelope"></i></a>
 		</footer>
 	</div>
+
+	<script>
+		var img = document.getElementsByTagName('img')[0];
+		// img.onmouseover = function (e) {
+		// 	img.src = "img/rasha2.jpg"
+		// };
+
+		//To make it Alternate between image one and two
+		var count = 0;
+		var imgs = ["img/rasha.jpg", "img/rasha2.jpg"];
+		img.onmouseover = function (e) {
+			count = (count+1) % 2;
+			img.src = imgs[count];
+		};
+	</script>
 </body>
 </html>
